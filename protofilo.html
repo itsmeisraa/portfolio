@@ -1,0 +1,197 @@
+ <!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>portfilo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="protofilo.css">
+        <script src="https://kit.fontawesome.com/379c9b5411.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+     <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo2.png" class="logo">
+                <ul id="sidemenu">
+                    <li> <a href="#header"> home</a></li>
+                    <li> <a href="#about" >about</a></li>
+                    <li> <a href="#services" >services</a></li>
+                
+                    <li> <a href="#contact" >contact</a></li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> computer science student </p>
+                <h1> hi, im <span>israa</span><br> chiheb from algeria </h1>
+            </div>
+        </div>
+     </div>
+    <!----------------------------------------------------------------------------------------about--------------------------------------------------------------------------------->
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/user1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 classs="sub-title">About me</h1>
+                    <p>My name is Israa Chiheb, I’m 18 years old and a second-year student at the Higher School of Computer Science in Bejaia, a future computer science engineer.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"> Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')"> Experience</p>
+                        <p class="tab-links"onclick="opentab('education')"> Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>photographer</span><br> in sports and nature photography</li>
+                            <li><span>multi-sport athlete</span><br> with experience in swimming, judo, basketball, football, and cycling. As a professional swimmer, 
+                                I achieved first place in Algeria in the 200m individual medley at national school sports championships </li>
+                            <li><span>cybersecurity  and ethical hacking</span><br>currently learning penetration testing with a focus on web exploitation</li>
+                            <li><span>Web development</span><br> working toward becoming a full-stack developer</li>
+                            <li><span>graphic designer</span><br> Marketing and advertising design, visual content creation for events, branding, and digital promotion</li>
+                            <li><span>trader</span><br>an active gold trader with a strong track record in the market. I run a VIP trading channel that consistently delivers profitable insights and signals, helping members grow their investments with confidence.
+                                 My trading style is based on technical analysis, market trends, and risk management</li>
+
+                        </ul>
+                    </div>
+                       <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>cybersecurity  and ethical hacking</span><br>Currently working toward a penetration testing certification on TryHackMe</li>
+                            <li><span>photographer and graphic designer </span><br>in many sports events across multiple disciplines, including swimming and Weight training</li>
+                            
+                        </ul>
+                    </div>
+                       <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>Completed Baccalaureate with a specialization in Natural Sciences, achieving an overall average of 17.98. 
+                                Scored 19.5 in Mathematics, 20 in Physics, and 17.5 in Science.</li>
+                            <li><span>2025-now</span><br>Student at the Higher School of Computer Science in Amizour, Bejaia.</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!------------------------------------------------------------------------------------------------services--------------------------------------------------------------------------------->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-camera-retro"></i>
+                    <h2>photographer</h2>
+                    <p>With over 3 years of experience in sports photography, I specialize in capturing dynamic and impactful images at sports competitions. I have a strong eye for detail and timing, ensuring every moment of 
+                        action is preserved with clarity and emotion.
+                    </p>
+                    <a href="#"> learn more </a>
+                </div>
+                   <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>graphic designer</h2>
+                    <p>with hands-on experience in visual content for events, branding, and digital promotion. I’ve worked with a swimming club and created designs for various public campaigns and social media pages. 
+                        From posters and ads to full Instagram feeds, I know how to make content that grabs attention and looks professional.
+                    </p>
+                    <a href="#"> learn more </a>
+                </div>
+                   <div>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h2>gold trader</h2>
+                    <p>run a VIP trading channel that consistently delivers solid profits. I share analysis, signals,
+                         and strategies with my members, helping them navigate the market with confidence.
+                    </p>
+                    <a href="#"> learn more </a>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-----------------------------------------------------------------------------------------contact--------------------------------------------------------------------------->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                       <h1 class="sub-title">Contact me </h1>
+                       <p><i class="fa-solid fa-envelope"></i>israaisraa202000@gmail.com</p>
+                        <p> <i class="fa-solid fa-envelope"></i>i_chiheb@estin.dz</p>
+                       <div class="socail-icons">
+                        <a href="https://t.me/israa_chiheb"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://github.com/itsmeisraa"><i class="fa-solid fa-code-branch"></i></a>
+                       </div>
+                       <a href="image/pdfcv.txt" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                     <input type="text" name="name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="message" rows="6" placeholder="Your message" required></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>made with  &nbsp;<i class="fa-solid fa-heart"></i>  &nbsp;by Chiheb israa</p>
+        </div>
+     </div>
+
+
+
+
+
+
+     <!-------------------------------------------------------------------script------------------------------------------------------------------------------------------------>
+     <script>
+        
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname){
+            for(tablink of tablinks ){
+                tablink.classList.remove("active-link");
+            }
+               for(tabcontent of tabcontents ){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+     </script>
+     <script>
+       var sidemenu = document.getElementById("sidemenu");
+
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+
+        }
+
+         function closemenu(){
+            sidemenu.style.right = "-200px";
+            
+        }
+     </script>
+     <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbydxSDYcGDLkt0tDr9Ff-kfIhEgMK7JeLXKxY6yVWy5yDM8oTdkol_wETaF_vFEKipE/exec';
+  const form = document.forms['submit-to-google-sheet'];
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+        alert("✅ Message sent!");
+        form.reset();
+      })
+      .catch(error => {
+        alert("❌ Error! Check console.");
+        console.error('Error!', error.message);
+      });
+  });
+</script>
+
+    </body>
+</html>
